@@ -39,9 +39,10 @@ We then examined the distribution, mean, and variance of our target - units_sold
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures (Figure 4 & 5, Appendix).  
 
 The formulas were:
-**Units_Sold=𝛽0+𝛽1 * price+𝛽2 * rating+𝛽3 * merchant_rating+𝛽4 * uses_ad_boosts+𝛽5 * merchant_has_profile_pictures +𝜀**
 
-**ln(Units_Sold)=𝛽0+𝛽1 * price+𝛽2 * rating+𝛽3 * merchant_rating+𝛽4 * uses_ad_boosts+𝛽5 * merchant_has_profile_pictures +𝜀**
+**Units_Sold=𝛽0 + 𝛽1 * price + 𝛽2 * rating + 𝛽3 * merchant_rating + 𝛽4 * uses_ad_boosts + 𝛽5 * merchant_has_profile_pictures +𝜀**
+
+**ln(Units_Sold)=𝛽0 + 𝛽1 * price + 𝛽2 * rating + 𝛽3 * merchant_rating + 𝛽4 * uses_ad_boosts + 𝛽5 * merchant_has_profile_pictures +𝜀**
 
 The result of the likelihood ratio test suggests that the negative binomial regression model performs better than the linear regression model (Figure 4, Appendix). Furthermore, the negative binomial regression outputs were in line with our initial hypotheses, except for the ad boost variable. Because the outputs conflicted with our initial hypothesis (boosted ads were NOT significant), we performed Propensity Score Matching (PSM) on the ad boost to verify that boosted ads truly have no impact on the number of units sold. 
 We included the price and rating for the ad boost variable to match the records (after checking if the other independent variables are significantly different), showing that we have 152 records for each group (Figure 6, Appendix). We ran a single negative binomial regression of this match (Figure 7, Appendix); However, the output revealed that the impact of ad boosting on units sold is statistically insignificant. We created a density plot of units sold to assess why, which portrayed a similar trend for each group from our dataset (Figure 8, Appendix). Thus, we cannot conclude that the ad has a significant impact on units sold. 
