@@ -55,7 +55,7 @@ We then examined the distribution, mean, and variance of our target - units_sold
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures.
 
 <p align="center">
-  <img width="360" height="200" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png">
+  <img width="460" height="300" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png">
 </p>
 
 <p align="center">
@@ -72,7 +72,7 @@ The result of the likelihood ratio test suggests that the negative binomial regr
 We included the price and rating for the ad boost variable to match the records (after checking if the other independent variables are significantly different), showing that we have 152 records for each group.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure6.png">
+  <img width="360" height="200" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure6.png">
 </p>
 
 We ran a single negative binomial regression of this match;
