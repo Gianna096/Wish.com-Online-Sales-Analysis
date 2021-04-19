@@ -48,9 +48,8 @@ We then examined the distribution, mean, and variance of our target - units_sold
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures.
 
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src=https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png">
 </p>
-<img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png" width="400" />
 
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure5.png" width="400" />
 
