@@ -55,7 +55,7 @@ We then examined the distribution, mean, and variance of our target - units_sold
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png">
+  <img width="360" height="200" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png">
 </p>
 
 <p align="center">
@@ -91,7 +91,7 @@ Thus, we cannot conclude that the ad has a significant impact on units sold.
 We followed the same PSM process to evaluate the merchant profile picture attribute to confirm our model’s result.  While there were only five matching records, we determined that merchant pictures positively impact units sold.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure9.png">
+  <img width="360" height="200" src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure9.png">
 </p>
 
 <p align="center">
