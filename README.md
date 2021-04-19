@@ -35,7 +35,7 @@ To examine the factors that influence the number of units sold, we used causal a
 *Causal Analysis*
 
 After identifying the variables to conduct causal analysis with, we checked the distributions of all independent variables
-![figure3](figure1.png). We performed a min-max normalization for three numeric variables (price, merchant rating, and rating) to scale them to a fixed range.
+![figure3](figure1.png =250x250). We performed a min-max normalization for three numeric variables (price, merchant rating, and rating) to scale them to a fixed range.
 We then examined the distribution, mean, and variance of our target - units_sold, and found there was overdispersion. We considered mainly using negative binomial/linear regression to treat the data instead of Poisson.
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures (Figure 4 & 5, Appendix).  
 
