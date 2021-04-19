@@ -21,10 +21,14 @@ Variable Selection
 
 To examine the factors that influence the number of units sold, we used causal analysis. First, we established a few hypotheses (using attributes of the dataset) to test based on our domain knowledge of the e-commerce landscape and initial exploration of the data:
 - Price: We believe that lowering prices may result in higher unit sales.
-●	Merchant Rating: Higher merchant ratings (1-5) may increase the number of units sold.
-●	Rating: The higher the mean product rating (1-5), the more the products may sell.
-●	Uses_ad_boosts: We would assume that merchants who purchase boosted ads would report increased item sales. However, the barplot of average units sold among the products with boosted ads seems to give us the opposite story. We’d like to dig in and see if we can get something out of this feature. 
-●	Merchant_has_profile_picture: Although the number of merchants with profile pictures is relatively small, we noticed that the average units sold of these merchants are higher than those without a profile picture.
+
+-	Merchant Rating: Higher merchant ratings (1-5) may increase the number of units sold.
+
+-	Rating: The higher the mean product rating (1-5), the more the products may sell.
+
+-	Uses_ad_boosts: We would assume that merchants who purchase boosted ads would report increased item sales. However, the barplot of average units sold among the products with boosted ads seems to give us the opposite story. We’d like to dig in and see if we can get something out of this feature. 
+
+-	Merchant_has_profile_picture: Although the number of merchants with profile pictures is relatively small, we noticed that the average units sold of these merchants are higher than those without a profile picture.
 
 **IV. Analysis**
 
