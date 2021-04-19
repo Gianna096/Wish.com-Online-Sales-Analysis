@@ -47,6 +47,9 @@ We performed a min-max normalization for three numeric variables (price, merchan
 We then examined the distribution, mean, and variance of our target - units_sold, and found there was overdispersion. We considered mainly using negative binomial/linear regression to treat the data instead of Poisson.
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures.
 
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure4.png" width="400" />
 
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure5.png" width="400" />
@@ -59,12 +62,15 @@ The formulas were:
 
 The result of the likelihood ratio test suggests that the negative binomial regression model performs better than the linear regression model. Furthermore, the negative binomial regression outputs were in line with our initial hypotheses, except for the ad boost variable. Because the outputs conflicted with our initial hypothesis (boosted ads were NOT significant), we performed Propensity Score Matching (PSM) on the ad boost to verify that boosted ads truly have no impact on the number of units sold. 
 We included the price and rating for the ad boost variable to match the records (after checking if the other independent variables are significantly different), showing that we have 152 records for each group.
+
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure6.png" width="400" />
 
 We ran a single negative binomial regression of this match;
+
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure7.png" width="400" />
 
 However, the output revealed that the impact of ad boosting on units sold is statistically insignificant. We created a density plot of units sold to assess why, which portrayed a similar trend for each group from our dataset.
+
 <img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure8.png" width="400" />
 
 Thus, we cannot conclude that the ad has a significant impact on units sold. 
@@ -91,7 +97,7 @@ We propose Wish conduct a before-after quasi-experiment to test if adding mercha
 5.	Compare the difference in Step(2) and Step(4).
 6.	With 6-month units sold numbers (3 months before treatment, 3 months after treatment) for each group in hand, we can perform a Difference in Differences (DID) analysis to assess how units sold changes after merchants in the test group post profile pictures compared to the control group.
 
-<img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure12.png" width="400" />
+<img src="https://github.com/Gianna096/Wish.com-Online-Sales-Analysis/blob/main/figures/figure12.png" width="500" />
 
 8.	The DID analysis: Units_Sold = 𝛽0 + 𝛽1 * 𝑇𝑟𝑒𝑎𝑡𝑒𝑑 + 𝛽2 * 𝐴𝑓𝑡𝑒𝑟 + 𝛽3 * 𝐴𝑓𝑡𝑒𝑟*𝑇𝑟𝑒𝑎𝑡𝑒𝑑 + 𝜀
 9.	Outcome evaluation: We expect to see a significant effect of After*Treated, and all the coefficients for this variable should be positive, showing that adding a merchant profile picture can genuinely boost the units sold.
