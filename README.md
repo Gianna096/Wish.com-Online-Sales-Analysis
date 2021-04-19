@@ -2,11 +2,12 @@
 
 **I. Company Overview**
 
-Background
+*Background
 Wish is a San Francisco-based e-commerce platform that supports over 100 million monthly active users worldwide and hosts over 300 million merchant products. Founded in 2011, Wish’s mission “is to provide everyone access to the most affordable and convenient shopping experience on the planet.” Wish was the most downloaded app in 2018 and, according to Forbes, ranks as the third-largest e-commerce marketplace by sales (Olson).
-Key Objectives
+*Key Objectives
 Wish’s business strategy involves heavily marketing across digital and physical mediums to drive exposure, attract users to the site, and ultimately increase the number of items sold (Olson). The items sold on the Wish site are incredibly inexpensive and oftentimes eclectic; thus, the business model revolves around selling high quantities of goods and catering to frequent, repeat business by offering a diverse array of products through a large number of merchants.
-II. Data Description 
+
+**II. Data Description** 
 Our Key Metric
 As mentioned above, Wish’s core business is centered around high inventory turnover because the prices of the goods on the site are so low (for our dataset, the average price of the 1,574 clothing articles is only $8.33). As a result, our team determined that maximizing the number of units sold is the most critical metric to assess for Wish to identify product performance on the site (the more units sold, the better Wish does - Wish collects a 15% revenue share for each product sold).
 Because each line item in our dataset represents an individual item listed on Wish, our team leveraged the attribute “Unit_Sold” to use as our metric, which, according to the data dictionary, captures the number of each item sold during July 2020.
@@ -40,4 +41,4 @@ We propose Wish conduct a before-after quasi-experiment to test if adding mercha
 6.	With 6-month units sold numbers (3 months before treatment, 3 months after treatment) for each group in hand, we can perform a Difference in Differences (DID) analysis to assess how units sold changes after merchants in the test group post profile pictures compared to the control group (Figure 12, Appendix).
 7.	The DID analysis: Units_Sold = 𝛽0 + 𝛽1*𝑇𝑟𝑒𝑎𝑡𝑒𝑑 + 𝛽2*𝐴𝑓𝑡𝑒𝑟 + 𝛽3*𝐴𝑓𝑡𝑒𝑟*𝑇𝑟𝑒𝑎𝑡𝑒𝑑 + 𝜀
 8.	Outcome evaluation: We expect to see a significant effect of After*Treated, and all the coefficients for this variable should be positive, showing that adding a merchant profile picture can genuinely boost the units sold.
-![image](https://user-images.githubusercontent.com/63126786/115168608-94106c00-a089-11eb-9da2-1b7a3c25e0e4.png)
+
