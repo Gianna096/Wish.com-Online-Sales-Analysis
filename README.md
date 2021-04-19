@@ -3,23 +3,29 @@
 **I. Company Overview**
 
 *Background*
+
 Wish is a San Francisco-based e-commerce platform that supports over 100 million monthly active users worldwide and hosts over 300 million merchant products. Founded in 2011, Wish’s mission “is to provide everyone access to the most affordable and convenient shopping experience on the planet.” Wish was the most downloaded app in 2018 and, according to Forbes, ranks as the third-largest e-commerce marketplace by sales (Olson).
 *Key Objectives*
+
 Wish’s business strategy involves heavily marketing across digital and physical mediums to drive exposure, attract users to the site, and ultimately increase the number of items sold (Olson). The items sold on the Wish site are incredibly inexpensive and oftentimes eclectic; thus, the business model revolves around selling high quantities of goods and catering to frequent, repeat business by offering a diverse array of products through a large number of merchants.
 
 **II. Data Description** 
-Our Key Metric
+*Our Key Metric*
+
 As mentioned above, Wish’s core business is centered around high inventory turnover because the prices of the goods on the site are so low (for our dataset, the average price of the 1,574 clothing articles is only $8.33). As a result, our team determined that maximizing the number of units sold is the most critical metric to assess for Wish to identify product performance on the site (the more units sold, the better Wish does - Wish collects a 15% revenue share for each product sold).
+
 Because each line item in our dataset represents an individual item listed on Wish, our team leveraged the attribute “Unit_Sold” to use as our metric, which, according to the data dictionary, captures the number of each item sold during July 2020.
 Variable Selection
+
 To examine the factors that influence the number of units sold, we used causal analysis. First, we established a few hypotheses (using attributes of the dataset) to test based on our domain knowledge of the e-commerce landscape and initial exploration of the data:
 ●	Price: We believe that lowering prices may result in higher unit sales.
 ●	Merchant Rating: Higher merchant ratings (1-5) may increase the number of units sold.
 ●	Rating: The higher the mean product rating (1-5), the more the products may sell.
-●	Uses_ad_boosts: We would assume that merchants who purchase boosted ads would report increased item sales. However, the barplot of average units sold among the products with boosted ads seems to give us the opposite story (Figure 1, Appendix). We’d like to dig in and see if we can get something out of this feature. 
-●	Merchant_has_profile_picture: Although the number of merchants with profile pictures is relatively small, we noticed that the average units sold of these merchants are higher than those without a profile picture (Figure 2, Appendix).
-IV. Analysis
-Causal Analysis
+●	Uses_ad_boosts: We would assume that merchants who purchase boosted ads would report increased item sales. However, the barplot of average units sold among the products with boosted ads seems to give us the opposite story. We’d like to dig in and see if we can get something out of this feature. 
+●	Merchant_has_profile_picture: Although the number of merchants with profile pictures is relatively small, we noticed that the average units sold of these merchants are higher than those without a profile picture.
+
+**IV. Analysis**
+*Causal Analysis*
 After identifying the variables to conduct causal analysis with, we checked the distributions of all independent variables (Figure 3, Appendix). We performed a min-max normalization for three numeric variables (price, merchant rating, and rating) to scale them to a fixed range.
 We then examined the distribution, mean, and variance of our target - units_sold, and found there was overdispersion. We considered mainly using negative binomial/linear regression to treat the data instead of Poisson.
 We built a linear regression and a negative binomial regression with the five selected variables: price, merchant rating, product rating, ad boosts, and merchant profile pictures (Figure 4 & 5, Appendix).  The formulas were:
