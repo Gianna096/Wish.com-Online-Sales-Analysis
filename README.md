@@ -5,9 +5,10 @@
 *Background*
 
 Wish is a San Francisco-based e-commerce platform that supports over 100 million monthly active users worldwide and hosts over 300 million merchant products. Founded in 2011, Wish’s mission “is to provide everyone access to the most affordable and convenient shopping experience on the planet.” Wish was the most downloaded app in 2018 and, according to Forbes, ranks as the third-largest e-commerce marketplace by sales (Olson).
+
 *Key Objectives*
 
-Wish’s business strategy involves heavily marketing across digital and physical mediums to drive exposure, attract users to the site, and ultimately increase the number of items sold (Olson). The items sold on the Wish site are incredibly inexpensive and oftentimes eclectic; thus, the business model revolves around selling high quantities of goods and catering to frequent, repeat business by offering a diverse array of products through a large number of merchants.
+Wish’s business strategy involves heavily marketing across digital and physical mediums to drive exposure, attract users to the site, and ultimately increase the number of items sold. The items sold on the Wish site are incredibly inexpensive and oftentimes eclectic; thus, the business model revolves around selling high quantities of goods and catering to frequent, repeat business by offering a diverse array of products through a large number of merchants.
 
 **II. Data Description** 
 
@@ -19,7 +20,7 @@ Because each line item in our dataset represents an individual item listed on Wi
 Variable Selection
 
 To examine the factors that influence the number of units sold, we used causal analysis. First, we established a few hypotheses (using attributes of the dataset) to test based on our domain knowledge of the e-commerce landscape and initial exploration of the data:
-●	Price: We believe that lowering prices may result in higher unit sales.
+- Price: We believe that lowering prices may result in higher unit sales.
 ●	Merchant Rating: Higher merchant ratings (1-5) may increase the number of units sold.
 ●	Rating: The higher the mean product rating (1-5), the more the products may sell.
 ●	Uses_ad_boosts: We would assume that merchants who purchase boosted ads would report increased item sales. However, the barplot of average units sold among the products with boosted ads seems to give us the opposite story. We’d like to dig in and see if we can get something out of this feature. 
