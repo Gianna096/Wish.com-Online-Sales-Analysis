@@ -2,9 +2,9 @@
 
 **I. Company Overview**
 
-*Background
+*Background*
 Wish is a San Francisco-based e-commerce platform that supports over 100 million monthly active users worldwide and hosts over 300 million merchant products. Founded in 2011, Wish’s mission “is to provide everyone access to the most affordable and convenient shopping experience on the planet.” Wish was the most downloaded app in 2018 and, according to Forbes, ranks as the third-largest e-commerce marketplace by sales (Olson).
-*Key Objectives
+*Key Objectives*
 Wish’s business strategy involves heavily marketing across digital and physical mediums to drive exposure, attract users to the site, and ultimately increase the number of items sold (Olson). The items sold on the Wish site are incredibly inexpensive and oftentimes eclectic; thus, the business model revolves around selling high quantities of goods and catering to frequent, repeat business by offering a diverse array of products through a large number of merchants.
 
 **II. Data Description** 
